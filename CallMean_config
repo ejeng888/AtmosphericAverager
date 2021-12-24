@@ -1,0 +1,45 @@
+[Main Variables]
+
+#directory = /home/sprj700/data_maestro/eccc-ppp3/maestro_archives/R2FC71E19V1/gridpt/prog/hyb
+
+directory = /space/hall4/sitestore/eccc/cmd/e/eje000/temp_glbeta_2020
+
+#save_path will be created if it doesn't exist
+save_path = /home/eje000/Desktop/glbeta_test
+
+start_time = 6
+increment = 1
+end_time = 17
+
+start_date = 2020010100
+end_date = 2020123000
+#end_date = 2020010112
+
+#include_runs refers to xxxxxxxx00_xx, the 9th and 10th digit, can only include 0,6,12,18
+include_runs = 0,12
+
+skip_corrupted_files = 2020011912_015
+
+[ip1 variables]
+#TT,FB,FI,HU,UU,PR,PN
+
+vars = TT,FB
+ip1 = 12000,0
+average = y,y
+is_vector = n,n
+
+# For the "average" list, input 'y' if you are concerned with calculating averages, or 'n' if you are concerned with finding the difference between end time and start time.
+# Note: If corresponding vector is placed in is_vector, it will always calculate average of both vectors and then find hypoteneuse. Otherwise, if 'n' is placed, it will calculate using whatever is placed in 'average'
+
+
+
+[Build temp directory]
+#Used if file structure of directory contains subdirectories of data. Build directory containing required information.
+
+enable = n
+temp_directory_save_path = /space/hall4/sitestore/eccc/cmd/e/eje000/temp_glbeta_2020
+
+#this directory will overwrite the directory listed in [Main Variables]
+directory = /fs/site4/eccc/mrd/rpnenv/smsh001/arcsfc/2020/*/*/glbeta/*
+
+
