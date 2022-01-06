@@ -27,7 +27,7 @@ Note: If you plan on moving the files around, make sure that the config file is 
 <br />
 
 <h1>In Case of Memory Issues</h1>
-> Important: When running the program for long periods of time (eg one year), you may experience memory issues. In these cases, it is recommended to split the runs (eg 6 months per run), and then average the resulting files. Remember to use a similar number of files in each run (ideally the same number of files)
+> Important: When running the program for long periods of time (eg 10 years), you may experience memory issues. In these cases, it is recommended to split the runs (eg 6 months per run), and then average the resulting files. Remember to use a similar number of files in each run (ideally the same number of files)
 
 > If you wish to use the latter approach, follow these steps: 
   > 1. Place the split files into one directory. Ensure that all the files have the same variables, if they don't the program won't work. For example, if I have one TT.std from Jan-July and another TT.std from Aug-Dec, place them in same directory. Alternatively you can use the combined.std file to make the process quicker
